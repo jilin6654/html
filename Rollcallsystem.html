@@ -563,7 +563,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="systemTitle">四公司点名系统</h1>
+        <h1 id="systemTitle">点名系统</h1>
         
         <button id="toggleSettings" class="settings-btn">⚙️</button>
         
@@ -573,7 +573,7 @@
                 <h2 class="section-title">基础设置</h2>
                 <div class="form-group">
                     <label for="systemTitleInput">系统标题</label>
-                    <input type="text" id="systemTitleInput" value="四公司点名系统">
+                    <input type="text" id="systemTitleInput" value="点名系统">
                 </div>
 
                 <h2 class="section-title">分组设置</h2>
@@ -670,7 +670,7 @@
 
         // 加载配置
         function loadConfig() {
-            const savedTitle = localStorage.getItem('systemTitle') || '四公司点名系统';
+            const savedTitle = localStorage.getItem('systemTitle') || '点名系统';
             const savedGroups = JSON.parse(localStorage.getItem('groups')) || [];
             
             document.getElementById('systemTitleInput').value = savedTitle;
